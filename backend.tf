@@ -1,8 +1,9 @@
 terraform {
   backend "s3" {
-    bucket         = "ctl-terraform-state-file"
-    key            = "ec2/dev"
+    bucket         = "buckets333"
+    key            = "asg-demo/asg-tf"
     region         = "ap-south-1"
-    dynamodb_table = "tf-lock-state"
+    dynamodb_table = "dynmodb"
+
   }
 }
